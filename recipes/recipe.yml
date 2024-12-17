@@ -23,8 +23,7 @@ modules:
     install:
       - mbpfan
       - igt-gpu-tools
-      - google-chrome-stable
-
+  
   # - type: default-flatpaks
   #   notify: true # Send notification after install/uninstall is finished (true/false)
   #   system:
