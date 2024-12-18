@@ -7,7 +7,7 @@ description: MacBookPro11,4 that hopefully works
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bluefin
-image-version: gts # latest is also supported if you want new updates ASAP
+image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -23,7 +23,7 @@ modules:
     install:
       - mbpfan
       - igt-gpu-tools
-  
+
   # - type: default-flatpaks
   #   notify: true # Send notification after install/uninstall is finished (true/false)
   #   system:
