@@ -34,6 +34,7 @@ modules:
       #  it is for newer Intel GPUs (Broadwell/Gen8 and up), while we rock HD Graphics 4600 which needs older i965 driver
       # https://fedoraproject.org/wiki/Firefox_Hardware_acceleration#Configure_VA-API_Video_decoding_on_Intel
       - libva-intel-media-driver
+      - mesa-vulkan-drivers # Vulkan on this generation of graphic chip is incomplete at best. 1.0 might work?
 
   # - type: default-flatpaks
   #   notify: true # Send notification after install/uninstall is finished (true/false)
