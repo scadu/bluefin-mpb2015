@@ -48,6 +48,8 @@ modules:
   #   user: {} # Also add Flathub user repo, but no user packages
 
   - type: script
+    snippets:
+      - for i in /etc/yum.repos.d/rpmfusion-*; do sed -i 's@enabled=1@enabled=0@g' "$i"; done
     scripts:
       - 1password.sh
 
