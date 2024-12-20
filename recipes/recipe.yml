@@ -27,8 +27,18 @@ modules:
     install:
       - mbpfan
       - igt-gpu-tools
+      - libva
       - libva-utils
-      - intel-vaapi-driver
+      - intel-vaapi-driver # The i965 driver from negativo17
+      - gstreamer1-plugin-vaapi
+      - mesa-va-drivers
+      - mesa-dri-drivers
+      - mesa-libEGL
+      - mesa-libGL
+      - mesa-libgbm
+      - mesa-libglapi
+      - ffmpeg
+      - libavcodec
       - yt-dlp
       - mpv
       - tuned-utils
@@ -36,8 +46,11 @@ modules:
     remove:
       #  it is for newer Intel GPUs (Broadwell/Gen8 and up), while we rock HD Graphics 4600 which needs older i965 driver
       # https://fedoraproject.org/wiki/Firefox_Hardware_acceleration#Configure_VA-API_Video_decoding_on_Intel
-      - libva-intel-media-driver
-      - mesa-vulkan-drivers # Vulkan on this generation of graphic chip is incomplete at best. 1.0 might work?
+      - libva-intel-media-driver # Remove iHD driver
+      - mesa-vulkan-drivers # No Vulkan support for my GPU
+      - intel-mediasdk # Not needed for Haswell
+      - intel-vpl-gpu-rt # Not needed for Haswell
+      - intel-gmmlib # Only needed by media-driver
 
   # - type: default-flatpaks
   #   notify: true # Send notification after install/uninstall is finished (true/false)
