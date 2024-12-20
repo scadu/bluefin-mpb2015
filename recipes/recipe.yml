@@ -18,8 +18,6 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: script
-    snippets:
-      - for i in /etc/yum.repos.d/rpmfusion-*; do sed -i 's@enabled=1@enabled=0@g' "$i"; done
     scripts:
       - 1password.sh
 
@@ -30,11 +28,9 @@ modules:
       - mbpfan
       - igt-gpu-tools
       - libva-utils
-      - libva-intel-driver
+      - intel-vaapi-driver
       - yt-dlp
       - mpv
-      - ffmpeg-free
-      - libavcodec-freeworld
 
     remove:
       #  it is for newer Intel GPUs (Broadwell/Gen8 and up), while we rock HD Graphics 4600 which needs older i965 driver
