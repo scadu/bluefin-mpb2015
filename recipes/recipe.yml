@@ -31,6 +31,7 @@ modules:
       - intel-vaapi-driver
       - yt-dlp
       - mpv
+      - tuned-utils
 
     remove:
       #  it is for newer Intel GPUs (Broadwell/Gen8 and up), while we rock HD Graphics 4600 which needs older i965 driver
