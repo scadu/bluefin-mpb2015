@@ -1,1 +1,1 @@
-kargs = ["acpi_osi=!Darwin intel_pstate=active nmi_watchdog=0 pcie_aspm=force acpi_mask_gpe=0x17"]
+kargs = ["acpi_osi=!Darwin,intel_pstate=active,nmi_watchdog=0,pcie_aspm=force,acpi_mask_gpe=0x17"]
