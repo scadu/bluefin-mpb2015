@@ -6,7 +6,7 @@ name: mac-blue
 description: MacBookPro11,4 that hopefully works
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bluefin-main
+base-image: ghcr.io/ublue-os/bluefin
 image-version: gts # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
