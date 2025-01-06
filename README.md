@@ -1,9 +1,6 @@
-# mac-blue &nbsp; [![bluebuild build badge](https://github.com/scadu/mac-blue/actions/workflows/build.yml/badge.svg)](https://github.com/scadu/mac-blue/actions/workflows/build.yml)
+# fedora-atomic &nbsp; [![bluebuild build badge](https://github.com/scadu/fedora-atomic/actions/workflows/build.yml/badge.svg)](https://github.com/scadu/fedora-atomic/actions/workflows/build.yml)
 
-[ublue-os/bluefin
-](https://github.com/ublue-os/bluefin) that hopefully works out of the box on MacBookPro11,4 (Macbook Pro 2015 15", Intel graphics).
-
-Inspired by https://github.com/TheScreechingBagel/apple-dots.
+scadu's playground. Buyers beware.
 
 ## Installation
 
